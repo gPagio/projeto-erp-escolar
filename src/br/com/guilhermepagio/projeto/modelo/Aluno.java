@@ -36,16 +36,16 @@ public class Aluno {
 
 	private String getAprovado() {
 		if (this.aprovado) {
-			return "Parabéns " + this.nome + ", você foi aprovado!";
+			return "Parabens " + this.nome + ", voce foi aprovado!";
 		} else {
-			return "Olá " + this.nome + ", você infelizmente não foi aprovado!" + "\n" + "Estude e faça a recuperação!"
+			return "Ola " + this.nome + ", voce infelizmente nao foi aprovado!" + "\n" + "Estude e faca a recuperacao!"
 					+ "\n" + "Bons estudos!";
 		}
 	}
 
 	private String getEndereco() {
 		return this.endereco.getUF() + "\n" + this.endereco.getCidade() + "\n" + this.endereco.getBairro() + "\n"
-				+ this.endereco.getLogradouro() + ", Nº" + this.endereco.getNumero();
+				+ this.endereco.getLogradouro() + ", N " + this.endereco.getNumero();
 	}
 
 	private void setNome(String nome) {
@@ -82,6 +82,6 @@ public class Aluno {
 	}
 
 	public String getInformacoesDoAluno() {
-		return getNome() + "\n" + getIdade() + "\n" + getCpf() + "\n" + this.getEndereco() + "\n" + getAprovado() + "\n";
+		return this.getNome() + "\n" + this.getIdade() + "\n" + this.getCpf() + "\n" + this.getEndereco() + "\n" + this.getAprovado() + "\n";
 	}
 }
