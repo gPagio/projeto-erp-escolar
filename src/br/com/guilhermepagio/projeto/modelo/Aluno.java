@@ -82,6 +82,7 @@ public class Aluno {
 	}
 
 	public String getInformacoesDoAluno() {
-		return this.getNome() + "\n" + this.getIdade() + "\n" + this.getCpf() + "\n" + this.getEndereco() + "\n" + this.getAprovado() + "\n";
+		return this.getNome() + "\n" + this.getIdade() + "\n" + this.getCpf() + "\n" + this.getEndereco() + "\n"
+				+ this.getAprovado() + "\n";
 	}
 }
